@@ -1,0 +1,43 @@
+<div class="color_background">
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <mat-card class="example-container">
+      <mat-form-field>
+        <input matInput name="p_name" formControlName="productNameFormControl" [errorStateMatcher]="matcher" placeholder="Product Name">
+        <mat-error *ngIf="f.productNameFormControl.hasError('required')">
+          Product name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="p_brand" formControlName="productBrandFormControl" [errorStateMatcher]="matcher" placeholder="Product Brand">
+        <mat-error *ngIf="f.productBrandFormControl.hasError('required')">
+          Program brand is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="p_price" formControlName="productPriceFormControl" [errorStateMatcher]="matcher" placeholder="Product Price in Rs.">
+        <mat-error *ngIf="f.productPriceFormControl.hasError('required')">
+          Product price is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="p_quantity" formControlName="productQuantityFromControl" [errorStateMatcher]="matcher" placeholder="Product quantity">
+        <mat-error *ngIf="f.productQuantityFromControl.hasError('required')">
+          Product quantity is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <textarea matInput name="p_desc" formControlName="productDescFormControl" [errorStateMatcher]="matcher" placeholder="Product Description"></textarea>
+        <mat-error *ngIf="f.productDescFormControl.hasError('required')">
+          Product description is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput name="p_barcode" formControlName="productBarcodeFormControl" [errorStateMatcher]="matcher" placeholder="Barcode of the product">
+        <mat-error *ngIf="f.productBarcodeFormControl.hasError('required')">
+          Product barcode is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <button type="submit" mat-button class="color_accent">Submit</button>
+    </mat-card>
+  </form>
+</div>

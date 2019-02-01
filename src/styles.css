@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+.color_primary{
+  background-color: darkorange;
+  color: #ffffff;
+}
+
+.color_secondary{
+
+}
+
+.color_accent{
+  background-color: #00c853;
+  color: #000000
+}
+
+.color_background{
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.color_background_footer{
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+.color_foreground{
+
+}
+
+.seperator{
+  background-color: rgba(0,0,0,0.70);
+  width: 100%;
+  height: 5px;
+}
